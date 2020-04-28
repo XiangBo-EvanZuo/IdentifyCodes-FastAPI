@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     DATABASE = 'identify'
     USERNAME = 'root'
     PASSWORD = '123456'
-    EXPIRE_TIME = timedelta(minutes=1)
+    EXPIRE_TIME = timedelta(minutes=5)
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8".format(
         username=USERNAME,
         password=PASSWORD,
